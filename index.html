@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Interactive rating component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+  <!-- Rating state start -->
+
+  <div class="page survey-page ">
+    <div class="circle star"><img class="star-icon" src="./images/icon-star.svg" alt=""></object></div>
+    <h1 class="survey-heading">How did we do?</h1>
+    <p class="survey-text"> Please let us know how we did with your support request. All feedback is appreciated
+      to help us improve our offering!</p>
+    <div class="rating-buttons">
+      <div class="circle score" data-points="1">1</div>
+      <div class="circle score" data-points="2">2</div>
+      <div class="circle score" data-points="3">3</div>
+      <div class="circle score" data-points="4">4</div>
+      <div class="circle score" data-points="5">5</div>
+    </div>
+
+    <button class="submit" id="submit">submit</button>
+  </div>
+  <div class=" page thanks-page hide">
+    <div class="picture"><img src="./images/illustration-thank-you.svg" alt=""></div>
+    <div class="rating-summary">
+      <div class="rating-summary-frame">You selected out <string class="points"></string> of 5</div>
+    </div>
+    <h1 class="thanks-heading"> Thank you!</h1>
+    <p class="thanks-text"> We appreciate you taking the time to give a rating. If you ever need more support,
+      don’t hesitate to get in touch!</p>
+  </div>
+
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">@graqu</a>.
+  </div> -->
+  <script src="./script.js"></script>
+</body>
+
+</html>
