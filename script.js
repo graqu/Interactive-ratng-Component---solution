@@ -1,6 +1,6 @@
 const scores = document.querySelectorAll('.score')
 const submitBtn = document.querySelector('#submit')
-const chosenPoints = document.querySelector('.points')
+const chosenPoints = document.querySelector('.rating-summary-frame')
 const surveyPage = document.querySelector('.survey-page')
 const thanksPage = document.querySelector('.thanks-page')
 const ratingFrame = document.querySelector('.rating-buttons')
@@ -16,7 +16,7 @@ const submitScore = () => {
 
 	surveyPage.classList.add('hide')
 	thanksPage.classList.remove('hide')
-	chosenPoints.textContent = rating
+	chosenPoints.textContent = `You selected out ${rating} of 5`
 }
 const chosePoints = e => {
 	scores.forEach(score => {
